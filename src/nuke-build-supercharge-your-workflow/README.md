@@ -384,5 +384,17 @@ Herbruikbaarheid kan worden bereikt door gemeenschappelijke logica in aparte met
 
 Kortom, Nuke Build versterkt de DevOps-principes door automatisering, samenwerking en continuïteit te bevorderen binnen het ontwikkel- en leveringsproces. Met deze inzichten en voorbeelden wordt duidelijk hoe Nuke Build kan worden ingezet om buildprocessen te moderniseren en te stroomlijnen. Door de flexibiliteit en kracht van C# te benutten, kunnen ontwikkelteams efficiënter werken en betere software leveren.
 
+### Bronnenlijst
+
+1. Smart automation for DevOps teams and CI/CD pipelines | NUKE. (z.d.). https://nuke.build/ V-Trmyl. (z.d.).
+
+2. Kempé, L. (2024, 29 september). Automate your .NET project builds with NUKE a cross-platform build automation solution. Laurent Kempé. https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/
+
+3. Rodney Littles II - Building GitHub Actions with Nuke. (z.d.). https://rodneylittlesii.com/posts/topic/building-github-actions-with-nuke Shirbandi, H. (2023, 25 oktober).
+
+4. Build Automation with Nuke in .NET projects - Hamed Shirbandi - Medium. Medium. https://medium.com/@hamed.shirbandi/build-automation-with-nuke-in-net-projects-9fc6cfddb23b
+
+5. Build Automation with NUKE. Microsoft Learn. https://learn.microsoft.com/en-us/shows/on-dotnet/build-automation-with-nuke
+
 
 
