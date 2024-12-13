@@ -68,6 +68,8 @@ nuke :setup
 
 <img src="plaatjes/NukBuild-setup.gif" alt="setup Nuke Build using GlobalTool" title="Setup Nuke Build">
 
+(Koch, z.d., sec. Get Started in Seconds)
+
 
 ### Anatomie: Welke onderdelen zijn er?
 Voor de eerste opzet wordt gebruikgemaakt van de standaardsetup van Nuke. Er wordt geërfd van NukeBuild, targets worden gegenereerd en binnen deze targets wordt een commando aangeroepen uit het Nuke.Common-pakket. Laten we deze onderdelen ontleden.
@@ -155,7 +157,7 @@ Voor de volledige uitwerking van de demo vind je de bijbehoorden code terug op [
 
 Als eerste wordt de setup van Nuke uitgevoerd. Er wordt een nieuw project binnen de solution gegenereerd dat wordt aangepast om Nuke binnen GitHub Actions te laten draaien met geïntegreerde CI/CD-ondersteuning. Ook wordt ervoor gezorgd dat de code wordt getest en gepackt om vervolgens te worden gepubliceerd naar NuGet. Dit alles zonder complexe bash-scripts of andere ingewikkelde processen die veel cognitieve belasting opleveren.
 
-Hieronder is de output van de Nuke-setup te zien:
+Hieronder is de output van de Nuke-setup te zien (Kempé, 2024, sec. What code is generated?):
 
 ```csharp
 class Build : NukeBuild
@@ -296,7 +298,7 @@ Nuke Build biedt out-of-the-box ondersteuning voor integraties met CI/CD-pipelin
 - **Space Automation**
 - **TeamCity**
 
-Om de build aan te passen voor gebruik met GitHub Actions, wordt een attribuut toegevoegd aan de `Build` -class:
+Om de build aan te passen voor gebruik met GitHub Actions, wordt een attribuut toegevoegd aan de `Build` -class (Rodney Littles II - Building GitHub Actions With Nuke, z.d.):
 
 ```csharp
 [GitHubActions(
@@ -361,13 +363,27 @@ Om deze automatisering af te ronden, is alleen nog een secret in GitHub nodig. D
 <img src="plaatjes/NukeGitHubOutput.png" alt="Nuke Build output" title="">
 
 ---
+### Plan 🗺️
+In een praktijkvoorbeeld kun je veel verschillende targets hebben die van elkaar afhankelijk zijn. Om een visuele weergave van het buildplan te zien, kun je het volgende commando uitvoeren (Shirbandi, 2023):
+
+```csharp
+nuke --plan
+```
+
+Dit opent automatisch een webpagina in je browser zoals hieronder weergegeven.
+
+<img src="plaatjes/NukePlan.png" alt="Nuke Plan output" title="">
+
+
+---
+
 
 ### Kracht van Nuke Build 💪🏻
 *Herbruikbaar en Uitbreidbaar*
 
-Een van de grootste voordelen van Nuke Build is de mogelijkheid om herbruikbare en uitbreidbare buildscripts te maken. Doordat Nuke gebruikmaakt van C#, kunnen alle mogelijkheden van de taal worden benut, zoals het definiëren van methoden, klassen en het gebruik van bibliotheken.
+Een van de grootste voordelen van Nuke Build is de mogelijkheid om herbruikbare en uitbreidbare buildscripts te maken. Doordat Nuke gebruikmaakt van C#, kunnen alle mogelijkheden van de taal worden benut, zoals het definiëren van methoden, klassen en het gebruik van bibliotheken (V-Trmyl, z.d., 13:45).
 
-Herbruikbaarheid kan worden bereikt door gemeenschappelijke logica in aparte methoden of zelfs in gedeelde bibliotheken te plaatsen. Hierdoor kunnen meerdere projecten dezelfde buildlogica delen, wat consistentie en onderhoudbaarheid bevordert.
+Herbruikbaarheid kan worden bereikt door gemeenschappelijke logica in aparte methoden of zelfs in gedeelde bibliotheken te plaatsen. Hierdoor kunnen meerdere projecten dezelfde buildlogica delen, wat consistentie en onderhoudbaarheid bevordert (V-Trmyl, z.d., 13:45).
 
 ---
 
@@ -386,15 +402,14 @@ Kortom, Nuke Build versterkt de DevOps-principes door automatisering, samenwerki
 
 ### Bronnenlijst
 
-1. Smart automation for DevOps teams and CI/CD pipelines | NUKE. (z.d.). https://nuke.build/ V-Trmyl. (z.d.).
+1. Koch, M. (z.d.). _Smart automation for DevOps teams and CI/CD pipelines._ NUKE Build. [https://nuke.build/](https://nuke.build/)
 
-2. Kempé, L. (2024, 29 september). Automate your .NET project builds with NUKE a cross-platform build automation solution. Laurent Kempé. https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/
+2. Kempé, L. (2024, 24 november). _Automate your .NET project builds with NUKE a cross-platform build automation solution._ [https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/](https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/)
 
-3. Rodney Littles II - Building GitHub Actions with Nuke. (z.d.). https://rodneylittlesii.com/posts/topic/building-github-actions-with-nuke Shirbandi, H. (2023, 25 oktober).
+3. Rodney Littles II (z.d.). - _Building GitHub Actions with Nuke._  [https://rodneylittlesii.com/posts/topic/building-github-actions-with-nuke](https://rodneylittlesii.com/posts/topic/building-github-actions-with-nuke)
 
-4. Build Automation with Nuke in .NET projects - Hamed Shirbandi - Medium. Medium. https://medium.com/@hamed.shirbandi/build-automation-with-nuke-in-net-projects-9fc6cfddb23b
+4. Shirbandi, H. (2023, 25 oktober). _Build Automation with Nuke in .NET projects - Hamed Shirbandi - Medium. Medium._ [https://medium.com/@hamed.shirbandi/build-automation-with-nuke-in-net-projects-9fc6cfddb23b](https://medium.com/@hamed.shirbandi/build-automation-with-nuke-in-net-projects-9fc6cfddb23b)
 
-5. Build Automation with NUKE. Microsoft Learn. https://learn.microsoft.com/en-us/shows/on-dotnet/build-automation-with-nuke
-
+5. V-Trmyl. (z.d.). _Build Automation with NUKE. Microsoft Learn._ [https://learn.microsoft.com/en-us/shows/on-dotnet/build-automation-with-nuke](https://learn.microsoft.com/en-us/shows/on-dotnet/build-automation-with-nuke)
 
 
